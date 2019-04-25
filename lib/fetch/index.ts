@@ -34,7 +34,7 @@ class FetchGit {
   public fetchGitInfo(repoInfo: string): ({ url: string, scaffold: string }) {
     const [scaffold, version] = repoInfo.split('@')
     return {
-      url: `${this.type}/happyhAo`,
+      url: `${this.type}/${this.registry}#${version}`,
       scaffold
     }
   }
